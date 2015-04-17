@@ -28,7 +28,7 @@ object labels {
     override def toString = show(this)
   }
 
-  case class Foo[A](value: A)(implicit t: Typeable[Foo[A]]) {
+  case class Foo[A](value: A)(implicit t: Typeable[A]) {
     override def toString = show(this)
   }
 }
